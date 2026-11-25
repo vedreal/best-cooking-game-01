@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sizzle &amp; Serve — a tiny kitchen, a very busy shift</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #2e2118; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #game { display: block; touch-action: none; background: #f6e3c5; }
+  /* Read aloud, never shown: the status line screen readers announce. */
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="720" aria-label="Sizzle and Serve: a cooking game. Grab ingredients from the pantry, chop them, grill patties, stack dishes on the plate and serve them before the tickets run out of patience."></canvas>
+<p id="status" role="status" aria-live="polite"></p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
